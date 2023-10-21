@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<style>
+body{
+    padding: 0%;
+    margin: 0% ;
+    background-color: rgb(0, 0, 0);
+}
+.navbar-brand{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: brown;
+}
+.navbar-brand span{
+    color: white;
+}
+.navbar-nav a{
+    color: rgb(41, 164, 183);
+    font-size: large;
+}
+.dropdown-menu{
+background-color: black;
+}
+.carousel-item img{
+    opacity: 40%;
+}
+.carousel-item h5{
+    font-size: 50px;
+    color: whitesmoke;
+}
+.carousel-inner .btn{
+    color: white;
+    background-color: brown;
+}
+.carousel-inner .btn:hover{
+    background-color: black;
+}
+    #cards{
+        margin-left: 8%;
+        margin-top: 2%;
+    }
+    .card img:hover{
+        transform: scale(1.1);
+        border-color: red;
+        transition: 1.5s;
+    }
+
+    #cards .row{
+        margin:20 ;
+    }
+    .card-body{
+        background-color:rgb(7, 6, 6);
+    }
+    .card-body h5{
+        color: white;
+    }
+    .card-body h4{
+        color:aliceblue;
+    }
+    .btn{
+        border-radius: 20px;
+        padding: 1%;
+        width: 10em;
+    }
+    #button{
+        color: white;
+        margin-left: 2%;
+        padding: 1%;
+        width: 10em;
+        background-color: brown;
+        border-radius: 20px;
+    }
+    #button:hover{
+        background-color: black;
+    }
+
+.container {
+    max-width: 90%;
+    margin-top: 5%;
+    border: rgb(41, 164, 183) solid;
+    text-align: center;
+}
+.container h2{
+    color: white;
+    font-size: xx-large;
+    margin-top: 2%;
+}
+#form{
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+#form label{
+    display:block;
+    color: white;
+    font-size: x-large;
+}
+#form input{
+    width: 60%;
+    padding: 2%;
+    border-radius: 20px;
+    background-color: gray;
+}
+#form input[type="text"]{
+    color: rgb(208, 10, 10);
+    background-color: black;
+}
+#form textarea{
+    background-color: black;
+    width: 60%;
+    height: 10em;
+    border-radius: 20px;
+    color: rgb(208, 10, 10);
+}
+#form button{
+        color: white;
+        padding: 1%;
+        background-color: brown;
+        border-radius: 20px;
+        display: inline-block;
+
+}
+.footer{
+    background-color: black;
+    margin-top: 1%;
+}
+.footer h5{
+    color: white;
+    font-size: large;
+}
+.footer h3{
+    color: rgb(17, 219, 242);
+}
+.footer span{
+    color: #e01010;
+    font-weight: bold;
+}
+.footer a{
+    text-decoration: none;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+
+}
+.footer a:hover{
+    color: brown;
+}
+.row{
+    text-align: center;
+}
+</style>
+    
+    <title>Gaming Store</title>
+</head>
+<body >
+    
+    <header id="home">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><img src="navlogo.jpg" alt="" width="60" height="60"> <span>Game</span>Store</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#product">Games</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Console</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">PC</a></li>
+                  <li><a class="dropdown-item" href="#">PS4</a></li>
+                  <li><a class="dropdown-item" href="#">XBOX</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search any game" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+              <button class="btn btn-outline-danger" id="button">Browse Store</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+        <div id="hero">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-slide="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="logo1.jpg" class="d-block w-100" alt="..." height="400">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Welcome To My Gaming Store</h5>
+                  <button class="btn btn-outline-danger">Shop Now</button>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <img src="logo2.jpg" class="d-block w-100" alt="..."  height="400">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Red Dead Redemption 2</h5>
+                  <button class="btn btn-danger">Shop Now</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="logo3.jpg" class="d-block w-100" alt="..."  height="400">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>God of War Ragnarok</h5>
+                  <button class="btn btn-danger">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+    </section>
+
+<section id="product">
+     <div id="cards">
+          <div class="row my-2">
+            <div class="col-md-4 col-sm-12">
+
+                <div class="card h-100" style="width: 20rem;">
+                    <img src="1.jpg" class="card-img-top img-fluid" alt="..." style="height: 500px; object-fit: cover;">
+                    <div class="card-body">
+                      <h4 class="card-title">Assasin's Creed Mirage</h4>
+                      <h5>Price: $99.99 </h5>
+                      <a href="#" class="btn btn-outline-danger">Add To Cart</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="card h-100" style="width: 20rem;">
+                    <img src="2.jpg" class="card-img-top img-fluid" alt="..." style="height: 500px; object-fit: cover;">
+                    <div class="card-body">
+                      <h4 class="card-title">Battlefield 2042</h4>
+                      <h5>Price: $25.99 </h5>
+                      <a href="#" class="btn btn-outline-danger">Add To Cart</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+                <div class="card h-100" style="width: 20rem;">
+                    <img src="3.jpg" class="card-img-top img-fluid" alt="..." style="height: 500px; object-fit: cover;">
+                    <div class="card-body">
+                      <h4 class="card-title">Far Cry 3</h4>
+                      <h5>Price: $40.99 </h5>
+                      <a href="#" class="btn btn-outline-danger">Add To Cart</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          
+          <div class="row my-2">
+
+            <div class="col-md-4 col-sm-12">
+                <div class="card h-100" style="width: 20rem;">
+                    <img src="4.jpg" class="card-img-top img-fluid" alt="..." style="height: 500px; object-fit: cover;">
+                    <div class="card-body">
+                      <h4 class="card-title">Grand Theft Auto 5</h4>
+                      <h5>Price: $79.99 </h5>
+                      <a href="#" class="btn btn-outline-danger">Add To Cart</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="card h-100" style="width: 20rem;">
+                    <img src="5.jpg" class="card-img-top img-fluid" alt="..." style="height: 500px; object-fit: cover;" >
+                    <div class="card-body">
+                      <h4 class="card-title">Call of Duty Black Ops 3</h4>
+                      <h5>Price: $89.99 </h5>
+                      <a href="#" class="btn btn-outline-danger">Add To Cart</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="card h-100" style="width: 20rem;">
+                    <img src="6.jpg" class="card-img-top img-fluid" alt="..." style="height: 500px; object-fit: cover;">
+                    <div class="card-body">
+                      <h4 class="card-title">PUBG</h4>
+                      <h5>Price: $150 </h5>
+                      <a href="#" class="btn btn-outline-danger">Add To Cart</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2 style="text-align: center;">Contact Us</h2>
+    <div id="form">
+    
+    <form action="/action">
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required="">
+    
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" placeholder="xyz@gmail.com" required="">
+    
+    <label for="contact">Contact No:</label>
+    <input type="text" id="contact" name="contact" placeholder="xxxx-xxxxxxx" required="">
+    
+    <label for="textarea">Your Message:</label>
+    <textarea name="message" id="message"></textarea>
+    
+    <div class="button">
+        <button type="submit" id="button">Submit</button>
+    </div>
+    
+    </form></div>
+    </div>
+</div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="container-f">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Contact Us</h3>
+                    <h5><span>Address: </span>Gulbahar Chowk, Peshawar</h5>
+                    <h5><span>Phone: </span>+92 333 456532</h5>
+                </div>
+                <div class="col-md-6">
+                    <h3>Follow Us</h3>
+        <a href="https://github.com/Adeel-Haider-03"><i class="fa-brands fa-github fa-lg" style="color: #dcdfe3;"></i> Github</a>
+        <a href="mailto:adeelboss3360@gmail.com"><i class="fa-regular fa-envelope fa-lg" style="color: #ee1b1b;"></i> Email</a>
+        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-lg" style="color: #1b0eda;"></i> Facebook</a>
+        <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter" style="color: #3d9cd7;"></i> Twitter</a>
+        <a href="https://youtube.com"><i class="fa-brands fa-youtube fa-lg" style="color: #e01010;"></i> Youtube</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+
+</body>
+</html>
